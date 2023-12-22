@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Train In The Dessert</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <a-asset-item id="train" src="gltf/Train in the dessert.glb"></a-asset-item>
+            </a-assets>
+
+            <a-sky color="#999999"></a-sky>
+
+            <a-box
+            id="#bg"
+            src="train_dessert_2.jpeg"
+            position="1 1 -30"
+            scale="200 100 10"></a-box>
+
+            <a-entity
+            gltf-model="#train"
+            position="5 -15 1"
+            scale="0.3 0.3 0.3"
+            >
+            </a-entity>
+
+            <a-camera look-controls-enabled wasd-controls-enabled position="0 0 30">
+            </a-camera>
+
+        </a-scene>
+    </body>
+</html>
